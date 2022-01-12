@@ -36,7 +36,7 @@ public class FlutterFirebaseMessagingBackgroundService extends JobIntentService 
         FlutterFirebaseMessagingBackgroundService.class,
         FlutterFirebaseMessagingUtils.JOB_ID,
         messageIntent,
-        message.getOriginalPriority() == RemoteMessage.PRIORITY_HIGH);
+        true/*message.getOriginalPriority() == RemoteMessage.PRIORITY_HIGH*/);
   }
 
   /**

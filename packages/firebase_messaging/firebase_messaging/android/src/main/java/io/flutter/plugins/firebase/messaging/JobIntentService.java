@@ -23,7 +23,7 @@ import java.util.HashMap;
 abstract class JobIntentService extends Service {
   static final String TAG = "JobIntentService";
 
-  static final boolean DEBUG = false;
+  static final boolean DEBUG = true;
 
   CompatJobEngine mJobImpl;
   WorkEnqueuer mCompatWorkEnqueuer;
